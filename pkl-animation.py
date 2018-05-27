@@ -51,7 +51,7 @@ def pklAnimation(time, dist, name, save):
 
 def pklNpsAnimation(time, dist, name, save):
     fig = plt.figure()
-    ax = plt.axes(xlim=(min(time) - 50, max(time) + 130), ylim=(min(dist) - 50, max(dist) + 50))
+    ax = plt.axes(xlim=(min(time) - 120, max(time) + 50), ylim=(min(dist) - 50, max(dist) + 50))
     ax.set(xlabel = "time (s)", ylabel = "transcribed distance (bp)", title = f"{name}.pkl")
     # ax.xaxis.label.set_fontsize(14)
     # ax.yaxis.label.set_fontsize(14)
@@ -66,9 +66,9 @@ def pklNpsAnimation(time, dist, name, save):
     npss = 888.5, 961.5, 1035.5
     for pos in npss:
         ax.axhline(pos, ls="--", color="k")
-    ax.text(533, 876, 'NPS Entry')
-    ax.text(533, 948, 'dyad')
-    ax.text(533, 1022, 'NPS Exit')
+    ax.text(-40, 876, 'NPS Entry')
+    ax.text(-40, 948, 'dyad')
+    ax.text(-40, 1022, 'NPS Exit')
 
     def init():
         line.set_data([], [])
