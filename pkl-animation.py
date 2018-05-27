@@ -10,7 +10,7 @@ from matplotlib import animation
 def pklAnimation(time, dist, name, save):
     fig = plt.figure()
     ax = plt.axes(xlim=(0, max(time) + 50))
-    ax.set(xlabel = "Time (s)", ylabel = "Transcribed distance (bp)", title = f"{name}.pkl")
+    ax.set(xlabel = "time (s)", ylabel = "transcribed distance (bp)", title = f"{name}.pkl")
     # ax.xaxis.label.set_fontsize(14)
     # ax.yaxis.label.set_fontsize(14)
     time_text = ax.text(0.95, 0.05,'',horizontalalignment='right',
@@ -52,7 +52,7 @@ def pklAnimation(time, dist, name, save):
 def pklNpsAnimation(time, dist, name, save):
     fig = plt.figure()
     ax = plt.axes(xlim=(min(time) - 50, max(time) + 130), ylim=(min(dist) - 50, max(dist) + 50))
-    ax.set(xlabel = "Time (s)", ylabel = "Transcribed distance (bp)", title = f"{name}.pkl")
+    ax.set(xlabel = "time (s)", ylabel = "transcribed distance (bp)", title = f"{name}.pkl")
     # ax.xaxis.label.set_fontsize(14)
     # ax.yaxis.label.set_fontsize(14)
     time_text = ax.text(0.01, 0.98,'',horizontalalignment='left',
