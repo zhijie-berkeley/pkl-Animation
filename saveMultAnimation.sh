@@ -1,5 +1,5 @@
 #!/bin/sh
-#to run: ./saveMultAnimation.sh
+#how to run this shell: ./saveMultAnimation.sh
 
 echo start saving animation ...
 
@@ -13,3 +13,4 @@ echo start saving WT-PolII-movie
 python /Users/ZHIJIE/Documents/2018\ Paper/Data\ figures/Movies/WT-PolII-movie/*.py /Users/ZHIJIE/Documents/2018\ Paper/Data\ figures/Movies/WT-PolII-movie/*.pkl --save
 
 echo done
+
